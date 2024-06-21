@@ -18,7 +18,7 @@ class PostController extends Controller
         ['id'=> 3,'Title'=>'CSS','Posted By'=>'Nema', 'Created At'=> '2024-06-15'],
         ['id'=> 4,'Title'=>'Html','Posted By'=>'Mariem', 'Created At'=> '2024-06-15']
       ];
-      return view('posts.index',['posts' => $postsFromDB]);
+      return view('posts.index',['posts' => $allPosts]);
     }
 
     public function show($postId){
