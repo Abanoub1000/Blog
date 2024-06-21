@@ -14,9 +14,9 @@ class PostController extends Controller
       // dd($postsFromDB);
       $allPosts = [
         ['id'=> 1,'Title'=>'PHP','Posted By'=>'Bob', 'Created At'=> '2024-06-15'],
-        ['id'=> 2,'Title'=>'javaSCRIPT','Posted By'=>'Jemmy', 'Created At'=> '2024-06-15'],
-        ['id'=> 3,'Title'=>'CSS','Posted By'=>'Nema', 'Created At'=> '2024-06-15'],
-        ['id'=> 4,'Title'=>'Html','Posted By'=>'Mariem', 'Created At'=> '2024-06-15']
+        ['id'=> 2,'Title'=>'javaSCRIPT','Posted By'=>'Bob', 'Created At'=> '2024-06-15'],
+        ['id'=> 3,'Title'=>'CSS','Posted By'=>'BOb', 'Created At'=> '2024-06-15'],
+        ['id'=> 4,'Title'=>'Html','Posted By'=>'bob', 'Created At'=> '2024-06-15']
       ];
       return view('posts.index',['posts' => $allPosts]);
     }
